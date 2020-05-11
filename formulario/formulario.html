@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=500, initial-scale=1.0">
+	<title>Survey</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="main" class="container">
+		<header class="header">
+		  <h1 id="title" class="text-center">
+		    Norwegian - Survey
+		  </h1>
+		  <p id="description" class="text-center">
+			What did you know about Norway? Take your time and answer this few questions.
+		  </p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+			  <label for="name" id="name-label">Name</label>
+			  <input type="text" id="name" placeholder="Enter your name" class="form-control" required>	
+			</div>
+			<div class="form-group">
+			  <label for="email" id="name-label">Email</label>
+			  <input type="text" id="email" placeholder="Enter your Email" class="form-control" required>
+			</div>
+			<div class="form-group">
+			  <label for="number" id="number-label">Age<span class="clue">(Optional)</span></label>
+			  <input type="number" id="number" name="age" min="10" max="99" class="form-control" class="form-control" placeholder="Age">
+			</div>
+			<div class="form-group">
+			  <p>How many times have you been in Norway?</p>
+			  <select name="role" id="dropdown" class="form-control">
+			  	<option disable selected value>Choose one...</option>
+				<option value="0">Never</option>
+				<option value="1">Once</option>
+				<option value="2">2 Times</option>cv 
+				<option value="3">3 or More times</option>
+			  </select>	
+			</div>
+			<div class="form-group">  
+			  <p>Are you planning to travel to Norway soon?</p>
+			  <label for="yes"><input type="radio" name="stay" value="yes" class="input-radio"> Yes</label>
+			  <label for="no"><input type="radio" name="stay" value="no" class="input-radio"> No</label>
+			  <label for="maeby"><input type="radio" name="stay" value="maybe" class="input-radio"> Maybe</label>
+			</div>
+			<div class="form-group">
+			  <p>What would you like to visit? <span class="clue">(Check all that apply)</span></p>
+			  <label for="bergen"><input type="checkbox" name="prefer" value="bergen" class="input-checkbox">Bergen</label>
+			  <label for="preikestolen"><input type="checkbox" name="prefer" value="preikestolen" class="input-checkbox">Preikestolen</label>
+			  <label for="stavanger"><input type="checkbox" name="prefer" value="stavanger" class="input-checkbox">Stavanger</label>
+			  <label for="northcape"><input type="checkbox" name="prefer" value="north-cape" class="input-checkbox">North Cape</label>
+			  <label for="safaryWales"><input type="checkbox" name="prefer" value="safary-wales" class="input-checkbox">Safary Wales</label>
+			  <label for="oslo"><input type="checkbox" name="prefer" value="oslo" class="input-checkbox">Oslo</label>
+			</div>
+			<div class="form-group">
+			  <p>Share with us another tipo from Norway:</p>
+			  <textarea name="textarea" id="textarea" class="input-textarea" placeholder="Here you cand ad any other comment you should share with us"></textarea>	
+			</div>
+			<div class="form-group">
+			  <button type="submit" id="submit" class="submit-button">
+			  	Submit
+			  </button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
